@@ -1,0 +1,29 @@
+// 1. ABSTRACTS
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// 2. BASE
+@import "base/reset";
+@import "base/typography";
+@import "base/base";
+
+// 3. LAYOUT
+@import "layout/header";
+@import "layout/footer";
+@import "layout/layout";
+
+// 4. COMPONENTS
+@import "components/button";
+@import "components/cards";
+@import "components/carousel";
+
+// 5. PAGES
+@import "pages/home";
+@import "pages/contact";
+
+// 6. THEMES
+@import "themes/theme";
+
+// 7. VENDORS
+@import "vendors/bootstrap";
+

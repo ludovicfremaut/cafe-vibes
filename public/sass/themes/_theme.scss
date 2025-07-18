@@ -1,0 +1,11 @@
+.btn-coffee {
+  background-color: var(--coffee-brown);
+  border-color: var(--coffee-brown);
+  color: var(--coffee-cream);
+}
+
+.btn-coffee:hover {
+  background-color: var(--coffee-dark);
+  color: white;
+  transition: background-color 0.3s ease;
+}

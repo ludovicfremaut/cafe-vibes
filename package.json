@@ -1,0 +1,28 @@
+{
+  "name": "OCoffee-ludovicfremaut",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A coffee shop management application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "scss:build": "sass public/sass/main.scss public/css/styles.css --no-source-map",
+    "scss:watch": "sass --watch sass/main.scss public/css/styles.css --no-source-map",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.13.1",
+  "dependencies": {
+    "bootstrap": "5.3.7",
+    "dotenv": "17.2.0",
+    "ejs": "3.1.10",
+    "express": "5.1.0",
+    "pg": "8.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0",
+    "sass": "1.89.2"
+  }
+}

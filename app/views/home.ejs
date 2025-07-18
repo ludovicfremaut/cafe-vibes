@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>O'Coffee</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" />
+
+    <!-- SCSS 7 - 1 -->
+    <link rel="stylesheet" href="/css/styles.css" />
+
+</head>
+
+<body style="background-color: var(--bs-body-bg); color: var(--bs-body-color);" class="d-flex flex-column min-vh-100">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent px-3">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="/">
+                <img src="/images/logo.svg" alt="Logo O'Coffee" class="logo" />
+                <h1 class="h4 m-0">O'Coffee</h1>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                <ul class="navbar-nav gap-3 text-end text-md-start">
+                    <li class="nav-item"><a class="nav-link" href="/">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/catalog">Catalogue</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">À propos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="container my-5 flex-grow-1">
+        <!-- BIENVENUE -->
+        <div class="row align-items-center mb-5">
+            <div class="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
+                <h2 class="h3">Bienvenue sur O’Coffee</h2>
+                <p>Découvrez notre sélection de cafés venus du monde entier, torréfiés avec soin.</p>
+                <a href="/catalog" class="btn btn-coffee mt-3">Voir le catalogue</a>
+            </div>
+            <div class="col-12 col-md-6 text-center">
+                <img src="/images/assets/about.jpg" alt="Image café" class="img-fluid rounded shadow" />
+            </div>
+        </div>
+
+        <!-- NOUVEAUTÉS -->
+        <section class="my-5">
+            <h2 class="text-center mb-4">Nouveautés</h2>
+
+            <!-- Carrousel (mobile uniquement) -->
+            <div class="d-md-none">
+                <div id="carouselNouveautes" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/images/assets/coffees/105589090.png" class="d-block w-100 rounded"
+                                alt="Café du Brésil">
+                            <div class="carousel-caption d-block bg-overlay p-4 rounded">
+                                <h5 class="card-title">Café du Brésil</h5>
+                                <p class="card-text">Une saveur douce et chocolatée venue des montagnes brésiliennes.
+                                </p>
+                                <a href="/catalog/brasil" class="btn btn-coffee mt-2">Découvrir</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/assets/coffees/100955890.png" class="d-block w-100 rounded"
+                                alt="Café d’Éthiopie">
+                            <div class="carousel-caption d-block bg-overlay p-4 rounded">
+                                <h5 class="card-title">Café d’Éthiopie</h5>
+                                <p class="card-text">Des notes fruitées et florales issues des hauts plateaux d’Afrique.
+                                </p>
+                                <a href="/catalog/ethiopia" class="btn btn-coffee mt-2">Découvrir</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/assets/coffees/100955894.png" class="d-block w-100 rounded"
+                                alt="Café de Colombie">
+                            <div class="carousel-caption d-block bg-overlay p-4 rounded">
+                                <h5 class="card-title">Café de Colombie</h5>
+                                <p class="card-text">Un café rond et équilibré, cultivé au cœur des Andes.</p>
+                                <a href="/catalog/colombia" class="btn btn-coffee mt-2">Découvrir</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grille (desktop uniquement) -->
+            <div class="row row-cols-1 row-cols-md-3 g-4 d-none d-md-flex">
+                <div class="col">
+                    <div class="desktop-coffee-card">
+                        <img src="/images/assets/coffees/105589090.png" alt="Café du Brésil">
+                        <div class="desktop-coffee-overlay">
+                            <h5>Café du Brésil</h5>
+                            <p class="small">Une saveur douce et chocolatée venue des montagnes brésiliennes.</p>
+                            <a href="/catalog/brasil" class="btn btn-coffee mt-2">Découvrir</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="desktop-coffee-card">
+                        <img src="/images/assets/coffees/100955890.png" alt="Café d’Éthiopie">
+                        <div class="desktop-coffee-overlay">
+                            <h5>Café d’Éthiopie</h5>
+                            <p class="small">Des notes fruitées et florales issues des hauts plateaux d’Afrique.</p>
+                            <a href="/catalog/ethiopia" class="btn btn-coffee mt-2">Découvrir</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="desktop-coffee-card">
+                        <img src="/images/assets/coffees/100955894.png" alt="Café de Colombie">
+                        <div class="desktop-coffee-overlay">
+                            <h5>Café de Colombie</h5>
+                            <p class="small">Un café rond et équilibré, cultivé au cœur des Andes.</p>
+                            <a href="/catalog/colombia" class="btn btn-coffee mt-2">Découvrir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="mt-auto text-center py-4">
+        <p>&copy; 2023 O'Coffee. Tous droits réservés aux fréres Pepper & éveloppeur Ludovic.f</p>
+        <p>
+            <a href="/privacy-policy">Politique de confidentialité</a> |
+            <a href="/terms-of-service">Conditions d'utilisation</a>
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

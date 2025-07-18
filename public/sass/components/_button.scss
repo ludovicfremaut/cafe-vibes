@@ -1,0 +1,12 @@
+.btn-coffee {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: $coffee-brown;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($coffee-brown, 10%);
+  }
+}

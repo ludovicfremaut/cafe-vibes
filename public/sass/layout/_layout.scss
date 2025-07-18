@@ -1,0 +1,11 @@
+body {
+  height: 100vh;
+  background: var(--coffee-cream);
+  color: var(--coffee-dark);
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
