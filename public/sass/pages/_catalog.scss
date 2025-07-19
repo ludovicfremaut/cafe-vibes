@@ -1,0 +1,30 @@
+.catalog-banner {
+  background-image: url("/images/assets/coffees/753915650.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+  position: relative;
+
+  .overlay-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); // fondu sombre pour lire le texte
+    z-index: 1;
+  }
+}
+
+.desktop-coffee-card {
+  transition: transform 0.6s ease, box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+
+  &:hover {
+    transform: rotateY(10deg);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  }
+}

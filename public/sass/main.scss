@@ -4,8 +4,9 @@
 
 // 2. BASE
 @import "base/reset";
-@import "base/typography";
 @import "base/base";
+@import "base/typography";
+@import "base/transition";
 
 // 3. LAYOUT
 @import "layout/header";
@@ -20,10 +21,14 @@
 // 5. PAGES
 @import "pages/home";
 @import "pages/contact";
+@import "pages/about";
+@import "pages/catalog";
 
 // 6. THEMES
 @import "themes/theme";
 
 // 7. VENDORS
 @import "vendors/bootstrap";
+
+
 

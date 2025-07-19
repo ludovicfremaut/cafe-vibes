@@ -1,0 +1,53 @@
+<%- include('partials/header') %>
+    <!-- Main -->
+    <main class="container my-5">
+        <!-- Ajouter ici le contenu du catalogue -->
+        <section class="catalog-banner text-center text-white d-flex align-items-center justify-content-center">
+            <div class="overlay-content">
+                <h2 class="display-4">Notre catalogue</h2>
+                <p class="lead">Découvrez notre sélection de cafés venus d’ailleurs</p>
+            </div>
+        </section>
+        <div class="d-flex align-items-center justify-content-center">
+            <a href="/catalog" class="btn btn-coffee m-3">Catégorie</a>
+        </div>
+        <!-- Grille (desktop uniquement) -->
+        <section class="coffee-grid">
+            <div class="row row-cols-1 row-cols-md-3 g-4 d-none d-md-flex">
+                <div class="col">
+                    <div class="desktop-coffee-card">
+                        <img class="img-fluid rounded" src="/images/assets/coffees/105589090.png" alt="Café du Brésil">
+                        <div class="desktop-coffee-overlay">
+                            <h5>Café du Brésil</h5>
+                            <p class="small">Une saveur douce et chocolatée venue des montagnes brésiliennes.</p>
+                            <a href="/catalog/brasil" class="btn btn-coffee mt-2">Découvrir</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="desktop-coffee-card">
+                        <img src="/images/assets/coffees/100955890.png" alt="Café d’Éthiopie">
+                        <div class="desktop-coffee-overlay">
+                            <h5>Café d’Éthiopie</h5>
+                            <p class="small">Des notes fruitées et florales issues des hauts plateaux d’Afrique.</p>
+                            <a href="/catalog/ethiopia" class="btn btn-coffee mt-2">Découvrir</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="desktop-coffee-card">
+                        <img src="/images/assets/coffees/100955894.png" alt="Café de Colombie">
+                        <div class="desktop-coffee-overlay">
+                            <h5>Café de Colombie</h5>
+                            <p class="small">Un café rond et équilibré, cultivé au cœur des Andes.</p>
+                            <a href="/catalog/colombia" class="btn btn-coffee mt-2">Découvrir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+                <a href="/catalog" class="btn btn-coffee m-3 ">Voir plus</a>
+            </div>
+        </section>
+    </main>
+    <%- include('partials/footer') %>

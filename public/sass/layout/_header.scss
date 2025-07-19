@@ -1,0 +1,25 @@
+.navbar-nav .nav-link {
+  position: relative;
+  color: $coffee-brown;
+  font-weight: 500;
+  transition: color 0.3s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0.2rem;
+    width: 0%;
+    height: 2px;
+    background-color: $coffee-brown;
+    transition: width 0.3s ease;
+  }
+
+  &:hover {
+    color: darken($coffee-brown, 10%);
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
