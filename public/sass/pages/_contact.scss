@@ -3,3 +3,32 @@
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+/* Corrige l'affichage responsive des cartes */
+.desktop-coffee-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.desktop-coffee-card img {
+  width: 100%; 
+  height: auto; 
+  display: block;
+}
+
+/* Pour éviter tout débordement */
+.desktop-coffee-overlay {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  text-align: center;
+}
+
+/* Fix spécifique iPhone */
+@media (max-width: 576px) {
+  .desktop-coffee-card {
+    margin-bottom: 1rem;
+  }
+}
