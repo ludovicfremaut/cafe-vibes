@@ -8,13 +8,27 @@
                 <p class="lead">Découvrez notre sélection de cafés venus d’ailleurs</p>
             </div>
         </section>
-        <div class="d-flex align-items-center justify-content-center">
-            <a href="/catalog" class="btn btn-coffee m-3">Catégorie</a>
-        </div>
+        <form method="GET" action="/catalog" class="text-center my-4">
+            <div class="d-flex justify-content-center flex-wrap align-items-center gap-2 mt-2">
+                <select name="category" id="category" class="form-select w-auto">
+                    <option value="">-- Toutes les catégories --</option>
+                    <% categories.forEach(category=> { %>
+                        <option value="<%= category.id %>" <% if (selectedCategory==category.id) { %>selected<% } %>>
+                                <%= category.name %>
+                        </option>
+                        <% }) %>
+                </select>
+                <button type="submit" class="btn btn-coffee">Filtrer</button>
+                <% if (selectedCategory) { %>
+                    <a href="/catalog" class="btn btn-secondary">Réinitialiser</a>
+                    <% } %>
+            </div>
+        </form>
+
         <!-- Grille (desktop uniquement) -->
         <section class="coffee-grid">
             <div class="row row-cols-1 row-cols-md-3 g-4">
-                <% coffees.forEach(coffee => { %>
+                <% coffees.forEach(coffee=> { %>
                     <div class="col">
                         <div class="desktop-coffee-card">
                             <img src="/images/assets/coffees/<%= coffee.image %>" alt="<%= coffee.name %>">

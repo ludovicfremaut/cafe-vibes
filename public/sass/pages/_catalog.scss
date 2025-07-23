@@ -29,4 +29,23 @@
     transform: rotateY(10deg);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
   }
+  
 }
+
+form {
+  label {
+    margin-bottom: 0.5rem;
+  }
+
+  .form-select {
+    background-color: #fff8f0;
+    border: 1px solid #6b4c3b;
+    color: #3e2c23;
+  }
+
+  .btn-secondary {
+    background-color: #aaa;
+    border: none;
+  }
+}
+
