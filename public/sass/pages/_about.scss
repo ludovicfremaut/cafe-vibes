@@ -1,0 +1,29 @@
+.about-page {
+  h1, h2, h3, h4 {
+    color: #6c4c3f;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.7;
+  }
+
+  ul {
+    margin-top: 1rem;
+    li {
+      margin-bottom: 0.5rem;
+      strong {
+        color: #6c4c3f;
+      }
+    }
+  }
+
+  section {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e0dcd5;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

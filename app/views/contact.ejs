@@ -1,10 +1,48 @@
 <%- include('partials/header') %>
-<!-- Main -->
-<main class="container my-5">
-    <h2 class="h3">Contact</h2>
-    <p>Pour toute question ou demande, n'hésitez pas à nous contacter.</p>
-    
-    <form action="/contact" method="POST">
-        <div class="mb-3">
-            <label for="name" class="form-label
-<%- include('partials/footer') %>
+
+
+    <main class="container my-5 flex-grow-1">
+        <div class="row">
+            <!-- Infos de contact -->
+            <div class="col-md-6 mb-4">
+                <h2 class="mb-4">Nous contacter</h2>
+                <p>Vous avez une question ou souhaitez en savoir plus sur nos cafés ? N'hésitez pas à nous écrire !</p>
+                <ul class="list-unstyled">
+                    <li><strong>Adresse :</strong> 12 rue du Café, 75000 Paris</li>
+                    <li><strong>Téléphone :</strong> +33 1 23 45 67 89</li>
+                    <li><strong>Email :</strong> contact@ocoffee.fr</li>
+                    <li><strong>Horaires :</strong> du lundi au samedi, de 9h à 18h</li>
+                </ul>
+            </div>
+
+            <!-- Formulaire -->
+            <div class="col-md-6 mb-4">
+                <h3 class="mb-3">Formulaire de contact</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nom</label>
+                        <input type="text" id="name" class="form-control" placeholder="Votre nom" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Adresse email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Votre email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" class="form-control" rows="4" placeholder="Votre message"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-coffee" disabled>Envoyer (non-fonctionnel)</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Carte -->
+        <section class="mb-5">
+            <h2>Nous trouver</h2>
+            <div id="map" class="rounded shadow" style="height: 400px;"></div>
+        </section>
+
+    </main>
+
+    <%- include('partials/footer') %>

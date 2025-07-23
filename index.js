@@ -18,6 +18,11 @@ app.use(express.static('public'))
 // Routes
 app.use(mainRouter);
 
+// Middleware pour gérer les erreurs 404
+app.use((req, res) => {
+  res.status(404).render('404', { title: 'Page non trouvée' });
+});
+
 app.listen(process.env.PORT, () => {
   console.log(`🚀 listening at http://localhost:${process.env.PORT}`)
 })

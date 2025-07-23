@@ -1,6 +1,6 @@
-# 🧠 Architecture SCSS 7-1 – Fiche Mémo OCoffee
+# Architecture SCSS 7-1 – Fiche Mémo OCoffee
 
-## 🎯 Pourquoi utiliser SCSS + l’architecture 7-1 ?
+## Pourquoi utiliser SCSS + l’architecture 7-1 ?
 
 | Avantage      | Détail                                                     |
 | ------------- | ---------------------------------------------------------- |
@@ -12,4 +12,4 @@
 
 ---
 
-## 📁 Arborescence standard (7 dossiers + 1 fichier principal)
+### Arborescence standard (7 dossiers + 1 fichier principal)
