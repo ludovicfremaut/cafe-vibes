@@ -35,11 +35,6 @@
                 .addTo(map)
                 .bindPopup("OCoffee - 12 rue du Café, Paris")
                 .openPopup();
-
-            setTimeout(() => {
-                map.invalidateSize(); // 🔧 Fix iOS
-            }, 500);
-
         } else {
             console.warn("🛑 Pas de div#map sur cette page");
         }
