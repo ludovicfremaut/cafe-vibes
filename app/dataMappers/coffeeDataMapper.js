@@ -33,6 +33,21 @@ async findCoffeeById(id) {
     [id]
   );
   return result.rows[0];
+},
+
+async findAllCategories() {
+  const result = await client.query('SELECT * FROM origin_country ORDER BY name ASC');
+  return result.rows;
+},
+
+async findCoffeesByCategory(categoryId) {
+  const query = `
+    SELECT * FROM coffee
+    WHERE origin_country_id = $1
+    ORDER BY name ASC
+  `;
+  const result = await client.query(query, [categoryId]);
+  return result.rows;
 }
 
 };
