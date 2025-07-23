@@ -23,9 +23,3 @@ O'Coffee est une application web développée avec Express.js et EJS qui présen
 
 - **Développeur** : Ludovic Fremaut
 - **Clients fictifs** : Jean et Jacques Pepper
-
----
-
-**O'Coffee** - *Votre torréfacteur artisanal à Hauts-de-Cloques* ☕
-# cafe-vibes
-# cafe-vibes
