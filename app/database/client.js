@@ -1,7 +1,16 @@
 import pg from 'pg';
-const {Client} = pg;
+import dotenv from 'dotenv';
 
-const client = new Client(process.env.PG_URL);
+dotenv.config();
+
+const { Client } = pg;
+
+const client = new Client({
+  connectionString: process.env.PG_URL,
+  ssl: {
+    rejectUnauthorized: false 
+  }
+});
 
 await client.connect();
 
